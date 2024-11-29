@@ -14,6 +14,7 @@ class DiscoverScreen extends StatelessWidget {
       // Elemento para toda la pantalla
       body: discoverProvier.initialLoading
       ? const Center(child: CircularProgressIndicator(strokeWidth: 2))
+      // Mostrar videos con scroll
       : VideoScrollableView(videos: discoverProvier.videos)
     );
   }
