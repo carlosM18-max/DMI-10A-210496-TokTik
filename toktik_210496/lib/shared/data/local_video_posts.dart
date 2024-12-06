@@ -1,5 +1,35 @@
 List<Map<String, dynamic>> videoPosts = [
   {
+    'name': 'Carro deportivo',
+    'videoUrl': 'assets/videos/apollo.mp4',
+    'likes': 1204,
+    'views': 789456,
+  },
+  {
+    'name': '¿El deportivo mas rapido?',
+    'videoUrl': 'assets/videos/bugatti.mp4',
+    'likes': 7465,
+    'views': 794651,
+  },
+  {
+    'name': 'Un paisaje en carretera hermoso',
+    'videoUrl': 'assets/videos/carretera.mp4',
+    'likes': 46854,
+    'views': 132546,
+  },
+  {
+    'name': 'Absolutamente el carro mas rapido',
+    'videoUrl': 'assets/videos/koenigsegg.mp4',
+    'likes': 342,
+    'views': 3332,
+  },
+  {
+    'name': 'Un paisaje bello',
+    'videoUrl': 'assets/videos/paisaje1.mp4',
+    'likes': 342,
+    'views': 3332,
+  },
+  {
     'name': 'Subiendo escaleras automáticas',
     'videoUrl': 'assets/videos/1.mp4',
     'likes': 23230,
@@ -46,35 +76,5 @@ List<Map<String, dynamic>> videoPosts = [
     'videoUrl': 'assets/videos/8.mp4',
     'likes': 342,
     'views': 3332,
-  },
-  {
-    'name': 'Carro deportivo',
-    'videoUrl': 'assets/videos/apollo.mp4',
-    'likes': 1204,
-    'views': 789456,
-  },
-  {
-    'name': '¿El deportivo mas rapido?',
-    'videoUrl': 'assets/videos/bugatti.mp4',
-    'likes': 7465,
-    'views': 794651,
-  },
-  {
-    'name': 'Un parisaje en carretera hermoso',
-    'videoUrl': 'assets/videos/carretera.mp4',
-    'likes': 46854,
-    'views': 132546,
-  },
-  {
-    'name': 'Absolutamente el carro mas rapido',
-    'videoUrl': 'assets/videos/koenigsegg.mp4',
-    'likes': 342,
-    'views': 3332,
-  },
-  {
-    'name': 'Un paisaje bello',
-    'videoUrl': 'assets/videos/paisaje1.mp4',
-    'likes': 342,
-    'views': 3332,
-  },
+  }
 ];

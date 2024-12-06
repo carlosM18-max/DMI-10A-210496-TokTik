@@ -1,5 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-<uses-permission andrid:name="android.permission.INTERNET"/>
     <application
         android:label="toktik_210496"
         android:name="${applicationName}"
