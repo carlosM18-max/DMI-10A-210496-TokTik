@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           create: (_) => DiscoverProvider()..loadnextPage()),
       ],
       child: MaterialApp(
-        title: 'TokTik',
+        title: 'TokTik_Carlos_Martin',
         debugShowCheckedModeBanner: false,
         theme: AppTheme().getTheme(),
         home: const DiscoverScreen(),

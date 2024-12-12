@@ -9,32 +9,35 @@ class VideoScrollableView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Paginador
-    return PageView.builder(
-      // Scroll vertical
-      scrollDirection: Axis.vertical,
-      // Da rebote
-      physics: const BouncingScrollPhysics(),
-      itemCount: videos.length,
-      itemBuilder: (context, index) {
-        final VideoPost videoPost = videos[index];
+    return OrientationBuilder(
+      builder: (context, orientation) {
+        return PageView.builder(
+          // Scroll vertical y horizontal
+          scrollDirection: orientation == Orientation.portrait
+              ? Axis.vertical
+              : Axis.horizontal,
+          // Da rebote
+          physics: const BouncingScrollPhysics(),
+          itemCount: videos.length,
+          itemBuilder: (context, index) {
+            final VideoPost videoPost = videos[index];
 
-        return Stack(
-          children: [
-            // Video Player + gradiante
-            SizedBox.expand(
-              child: FullscreenPlayer(
-                caption: videoPost.caption,
-                videourl: videoPost.videoUrl,
-              )
-            ),
-            // Botones
-            Positioned(
-              bottom: 40,
-              right: 20,
-              child: VideoButtons(video: videoPost)
-            ),
-          ],
+            return Stack(
+              children: [
+                // Video Player + gradiante
+                SizedBox.expand(
+                    child: FullscreenPlayer(
+                  caption: videoPost.caption,
+                  videourl: videoPost.videoUrl,
+                )),
+                // Botones
+                Positioned(
+                    bottom: 40,
+                    right: 20,
+                    child: VideoButtons(video: videoPost)),
+              ],
+            );
+          },
         );
       },
     );

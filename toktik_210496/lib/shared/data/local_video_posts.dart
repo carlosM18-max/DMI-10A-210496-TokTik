@@ -1,5 +1,23 @@
 List<Map<String, dynamic>> videoPosts = [
   {
+    'name': 'Video sobre el simposio UTXJ',
+    'videoUrl': 'assets/videos/simposio.mp4',
+    'likes': 135151,
+    'views': 7891546,
+  },
+  {
+    'name': 'Video Corto de despedida',
+    'videoUrl': 'assets/videos/despedida.mp4',
+    'likes': 8763453,
+    'views': 52384536,
+  },
+  {
+    'name': 'Video en el convivio',
+    'videoUrl': 'assets/videos/navidad.mp4',
+    'likes': 135151,
+    'views': 456278,
+  },
+  {
     'name': 'Carro deportivo',
     'videoUrl': 'assets/videos/apollo.mp4',
     'likes': 1204,
