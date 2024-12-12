@@ -19,6 +19,7 @@ class DiscoverProvider extends ChangeNotifier {
         .toList();
 
     videos.addAll(newVideos);
+    // ver videos por medio de breaks
     initialLoading = false;
     notifyListeners();
   }
